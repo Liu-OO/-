@@ -1,0 +1,484 @@
+@prefix : <http://www.semanticweb.org/liu/firewall-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/liu/firewall-ontology#firewall-ontology> .
+
+<http://www.semanticweb.org/liu/firewall-ontology#firewall-ontology> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/liu/firewall-ontology#IP_MAC地址绑定要求
+:IP_MAC地址绑定要求 rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#具有
+:具有 rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#动态开放端口要求
+:动态开放端口要求 rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#包含子类
+:包含子类 rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#包过滤要求
+:包过滤要求 rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#可部署于
+:可部署于 rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#对应
+:对应 rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#应满足
+:应满足 rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#必须满足
+:必须满足 rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#必须遵守
+:必须遵守 rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#支持控制维度
+:支持控制维度 rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#支持部署模式
+:支持部署模式 rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#无需满足
+:无需满足 rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#状态检测要求
+:状态检测要求 rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#管理方式要求
+:管理方式要求 rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#网络地址转换要求
+:网络地址转换要求 rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#身份标识与鉴别要求
+:身份标识与鉴别要求 rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#防护攻击类型
+:防护攻击类型 rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/liu/firewall-ontology#万兆产品指标
+:万兆产品指标 rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#千兆产品指标
+:千兆产品指标 rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#口令最小长度
+:口令最小长度 rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#存储周期
+:存储周期 rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#对应标准
+:对应标准 rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#对应章条号
+:对应章条号 rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#支持DNAT状态
+:支持DNAT状态 rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#支持SNAT状态
+:支持SNAT状态 rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#支持状态
+:支持状态 rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#攻击包通过率阈值
+:攻击包通过率阈值 rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#最小安全原则执行状态
+:最小安全原则执行状态 rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#正常连接成功率阈值
+:正常连接成功率阈值 rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#登录失败处理次数
+:登录失败处理次数 rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#登录超时时间
+:登录超时时间 rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#百兆产品指标
+:百兆产品指标 rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/liu/firewall-ontology#不符合标准
+:不符合标准 rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#产品类型
+:产品类型 rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#具体要求
+:具体要求 rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#功能要求子项
+:功能要求子项 rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#功能要求项
+:功能要求项 rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#性能指标项
+:性能指标项 rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#技术要求域
+:技术要求域 rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#控制维度
+:控制维度 rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#攻击类型
+:攻击类型 rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#测评方法域
+:测评方法域 rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#等级划分域
+:等级划分域 rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#等级类型
+:等级类型 rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#网络型防火墙
+:网络型防火墙 rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#规则约束
+:规则约束 rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/liu/firewall-ontology#FW001
+:FW001 rdf:type owl:NamedIndividual ,
+                :网络型防火墙 ;
+       :包过滤要求 :包过滤要求 ;
+       :网络地址转换要求 :网络地址转换要求 ;
+       :身份标识与鉴别要求 :身份标识与鉴别要求 ;
+       :支持SNAT状态 "false"^^xsd:boolean ;
+       :最小安全原则执行状态 "false"^^xsd:boolean ;
+       :登录失败处理次数 6 .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#WEB应用防火墙
+:WEB应用防火墙 rdf:type owl:NamedIndividual ,
+                   :产品类型 ;
+          :可部署于 :WEB服务器前端 ;
+          :应满足 :基本级WEB应用防火墙安全技术要求 ,
+               :增强级WEB应用防火墙安全技术要求 .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#WEB服务器前端
+:WEB服务器前端 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#万兆产品指标
+:万兆产品指标 rdf:type owl:NamedIndividual ,
+                 xsd:integer .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#不同安全域之间
+:不同安全域之间 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#主机型防火墙
+:主机型防火墙 rdf:type owl:NamedIndividual ,
+                 :产品类型 ;
+        :可部署于 :计算机主机 ;
+        :应满足 :基本级主机型防火墙安全技术要求 ,
+             :增强级主机型防火墙安全技术要求 .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#包过滤要求
+:包过滤要求 rdf:type owl:NamedIndividual ,
+                :具体要求 ;
+       :最小安全原则执行状态 "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#千兆产品指标
+:千兆产品指标 rdf:type owl:NamedIndividual ,
+                 xsd:integer .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#反向代理模式要求
+:反向代理模式要求 rdf:type owl:NamedIndividual ,
+                   :具体要求 ;
+          :支持状态 "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#口令最小长度
+:口令最小长度 rdf:type owl:NamedIndividual ,
+                 xsd:integer .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#基本级
+:基本级 rdf:type owl:NamedIndividual ,
+              :等级类型 ;
+     :对应标准 "GB/T 18336.3-2015 EAL2级"^^xsd:string .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#基本级WEB应用防火墙安全技术要求
+:基本级WEB应用防火墙安全技术要求 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#基本级主机型防火墙安全技术要求
+:基本级主机型防火墙安全技术要求 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#基本级数据库防火墙安全技术要求
+:基本级数据库防火墙安全技术要求 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#基本级网络型防火墙安全技术要求
+:基本级网络型防火墙安全技术要求 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#增强级
+:增强级 rdf:type owl:NamedIndividual ,
+              :等级类型 ;
+     :对应标准 "GB/T 18336.3-2015 EAL4+级"^^xsd:string .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#增强级WEB应用防火墙安全技术要求
+:增强级WEB应用防火墙安全技术要求 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#增强级主机型防火墙安全技术要求
+:增强级主机型防火墙安全技术要求 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#增强级数据库防火墙安全技术要求
+:增强级数据库防火墙安全技术要求 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#增强级网络型防火墙安全技术要求
+:增强级网络型防火墙安全技术要求 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#存储周期
+:存储周期 rdf:type owl:NamedIndividual ,
+               xsd:integer .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#安全审计要求
+:安全审计要求 rdf:type owl:NamedIndividual ,
+                 :功能要求子项 ;
+        :存储周期 6 .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#安全技术要求
+:安全技术要求 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#对应标准
+:对应标准 rdf:type owl:NamedIndividual ,
+               xsd:string .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#对应章条号
+:对应章条号 rdf:type owl:NamedIndividual ,
+                xsd:string .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#支持DNAT状态
+:支持DNAT状态 rdf:type owl:NamedIndividual ,
+                   xsd:boolean .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#支持SNAT状态
+:支持SNAT状态 rdf:type owl:NamedIndividual ,
+                   xsd:boolean .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#支持状态
+:支持状态 rdf:type owl:NamedIndividual ,
+               xsd:boolean .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#攻击包通过率阈值
+:攻击包通过率阈值 rdf:type owl:NamedIndividual ,
+                   xsd:integer .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#数据库服务器前端
+:数据库服务器前端 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#数据库防火墙
+:数据库防火墙 rdf:type owl:NamedIndividual ,
+                 :产品类型 ;
+        :可部署于 :数据库服务器前端 ;
+        :应满足 :基本级数据库防火墙安全技术要求 ,
+             :增强级数据库防火墙安全技术要求 .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#日志存储周期规则
+:日志存储周期规则 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#最小安全原则执行状态
+:最小安全原则执行状态 rdf:type owl:NamedIndividual ,
+                     xsd:boolean .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#正常连接成功率阈值
+:正常连接成功率阈值 rdf:type owl:NamedIndividual ,
+                    xsd:integer .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#测评方法
+:测评方法 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#登录失败处理次数
+:登录失败处理次数 rdf:type owl:NamedIndividual ,
+                   xsd:integer .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#登录超时时间
+:登录超时时间 rdf:type owl:NamedIndividual ,
+                 xsd:integer .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#百兆产品指标
+:百兆产品指标 rdf:type owl:NamedIndividual ,
+                 xsd:integer .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#等级划分
+:等级划分 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#网络地址转换要求
+:网络地址转换要求 rdf:type owl:NamedIndividual ,
+                   :具体要求 ;
+          :支持DNAT状态 "true"^^xsd:boolean ;
+          :支持SNAT状态 "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#网络型防火墙
+:网络型防火墙 rdf:type owl:NamedIndividual ,
+                 :产品类型 ;
+        :应满足 :基本级网络型防火墙安全技术要求 ,
+             :增强级网络型防火墙安全技术要求 .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#计算机主机
+:计算机主机 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#路由转发模式要求
+:路由转发模式要求 rdf:type owl:NamedIndividual ,
+                   :具体要求 ;
+          :支持状态 "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#身份标识与鉴别要求
+:身份标识与鉴别要求 rdf:type owl:NamedIndividual ,
+                    :功能要求项 ;
+           :口令最小长度 8 ;
+           :登录失败处理次数 5 ;
+           :登录超时时间 30 .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#远程管理加密规则
+:远程管理加密规则 rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#透明传输模式要求
+:透明传输模式要求 rdf:type owl:NamedIndividual ,
+                   :具体要求 ;
+          :支持状态 "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#防火墙
+:防火墙 rdf:type owl:NamedIndividual ,
+              :产品类型 ;
+     :具有 :安全技术要求 ,
+         :测评方法 ,
+         :等级划分 ;
+     :包含子类 :WEB应用防火墙 ,
+           :主机型防火墙 ,
+           :数据库防火墙 ,
+           :网络型防火墙 ;
+     :可部署于 :不同安全域之间 ;
+     :必须遵守 :日志存储周期规则 ,
+           :远程管理加密规则 ,
+           :默认拒绝策略规则 .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#静态路由要求
+:静态路由要求 rdf:type owl:NamedIndividual ,
+                 :具体要求 ;
+        :支持状态 "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/liu/firewall-ontology#默认拒绝策略规则
+:默认拒绝策略规则 rdf:type owl:NamedIndividual .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
